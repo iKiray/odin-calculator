@@ -13,6 +13,19 @@ function divide(n1, n2) {
 }
 
 //step 2 - creating 3 variables
-const number1;
-const number2;
-const operator;
+let number1;
+let number2;
+let operator;
+
+//step 3 - 'operate' function
+function operate(op, n1, n2) {
+    if (op === "+") {
+        return add(n1, n2);
+    } else if (op === "-") {
+        return subtract(n1, n2);
+    } else if (op === "*") {
+        return multiply(n1, n2);
+    } else if (op === "/") {
+        return divide(n1, n2);
+    }
+}
