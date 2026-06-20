@@ -29,3 +29,5 @@ function operate(op, n1, n2) {
         return divide(n1, n2);
     }
 }
+
+//step 5 - button functions
