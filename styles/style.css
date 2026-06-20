@@ -1,3 +1,17 @@
 body {
     background-color: black;
 }
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+#display {
+    height: 40px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+}
