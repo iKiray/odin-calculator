@@ -13,10 +13,10 @@ function divide(n1, n2) {
 }
 
 //step 2 - creating 3 variables
-let num1;
-let num2;
-let oprt;
-let result;
+let num1 = "";
+let num2 = "";
+let oprt = "";
+let result = "";
 
 //step 3 - 'operate' function
 function operate(op, n1, n2) {
@@ -53,7 +53,7 @@ document.getElementById("clear").addEventListener("click", () => {
 //step 6 - make the operate function work properly
 //step 7 - fixing bugs
 document.getElementById("add").addEventListener("click", () => {
-    if (oprt) {
+    if (oprt !== "") {
         return;
     } else if (result !== "") {
         num1 = result;
@@ -66,7 +66,7 @@ document.getElementById("add").addEventListener("click", () => {
     };
 });
 document.getElementById("subtract").addEventListener("click", () => {
-    if (oprt) {
+    if (oprt !== "") {
         return;
     } else if (result !== "") {
         num1 = result;
@@ -79,7 +79,7 @@ document.getElementById("subtract").addEventListener("click", () => {
     };
 });
 document.getElementById("multiply").addEventListener("click", () => {
-    if (oprt) {
+    if (oprt !== "") {
         return;
     } else if (result !== "") {
         num1 = result;
@@ -92,7 +92,7 @@ document.getElementById("multiply").addEventListener("click", () => {
     };
 });
 document.getElementById("divide").addEventListener("click", () => {
-    if (oprt) {
+    if (oprt !== "") {
         return;
     } else if (result !== "") {
         num1 = result;
@@ -105,6 +105,11 @@ document.getElementById("divide").addEventListener("click", () => {
     };
 });
 document.getElementById("equal").addEventListener("click", () => {
+    if (!oprt) return;
+    if ((display.value === "0") && (oprt === "divide")) {
+        display.value = "Nice try!";
+        return;
+    };
     num2 = display.value;
     display.value = operate(oprt, +num1, +num2);
     result = display.value;
