@@ -112,7 +112,7 @@ document.getElementById("equal").addEventListener("click", () => {
         return;
     };
     num2 = display.value;
-    display.value = operate(oprt, +num1, +num2);
+    display.value = +operate(oprt, +num1, +num2).toFixed(4);
     result = display.value;
     num1 = "";
     num2 = "";
