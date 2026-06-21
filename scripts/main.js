@@ -153,6 +153,7 @@ document.getElementById("0").addEventListener("click", () => {
         display.value += 0;
     }
 });
+//Extra Credit
 document.getElementById(".").addEventListener("click", () => {
     if (display.value.indexOf(".") !== -1) {
         return;
@@ -165,6 +166,10 @@ document.getElementById("clear").addEventListener("click", () => {
     num2 = "";
     oprt = "";
     result = "";
+});
+//Extra Credit
+document.getElementById("backspace").addEventListener("click", () => {
+    display.value = display.value.slice(0, -1);
 });
 //step 6 - make the operate function work properly
 //step 7 - fixing bugs
