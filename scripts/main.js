@@ -16,6 +16,7 @@ function divide(n1, n2) {
 let num1;
 let num2;
 let oprt;
+let result;
 
 //step 3 - 'operate' function
 function operate(op, n1, n2) {
@@ -47,34 +48,67 @@ document.getElementById("clear").addEventListener("click", () => {
     num1 = "";
     num2 = "";
     oprt = "";
+    result = "";
 });
 //step 6 - make the operate function work properly
 //step 7 - fixing bugs
 document.getElementById("add").addEventListener("click", () => {
-    if (oprt) return;
-    num1 = display.value;
-    oprt = "add";
-    display.value = "";
+    if (oprt) {
+        return;
+    } else if (result !== "") {
+        num1 = result;
+        oprt = "add";
+        display.value = "";
+    } else {
+        num1 = display.value;
+        oprt = "add";
+        display.value = "";
+    };
 });
 document.getElementById("subtract").addEventListener("click", () => {
-    if (oprt) return;
-    num1 = display.value;
-    oprt = "subtract";
-    display.value = "";
+    if (oprt) {
+        return;
+    } else if (result !== "") {
+        num1 = result;
+        oprt = "subtract";
+        display.value = "";
+    } else {
+        num1 = display.value;
+        oprt = "subtract";
+        display.value = "";
+    };
 });
 document.getElementById("multiply").addEventListener("click", () => {
-    if (oprt) return;
-    num1 = display.value;
-    oprt = "multiply";
-    display.value = "";
+    if (oprt) {
+        return;
+    } else if (result !== "") {
+        num1 = result;
+        oprt = "multiply";
+        display.value = "";
+    } else {
+        num1 = display.value;
+        oprt = "multiply";
+        display.value = "";
+    };
 });
 document.getElementById("divide").addEventListener("click", () => {
-    if (oprt) return;
-    num1 = display.value;
-    oprt = "divide";
-    display.value = "";
+    if (oprt) {
+        return;
+    } else if (result !== "") {
+        num1 = result;
+        oprt = "divide";
+        display.value = "";
+    } else {
+        num1 = display.value;
+        oprt = "divide";
+        display.value = "";
+    };
 });
 document.getElementById("equal").addEventListener("click", () => {
     num2 = display.value;
     display.value = operate(oprt, +num1, +num2);
+    result = display.value;
+    num1 = "";
+    num2 = "";
+    oprt = "";
 });
