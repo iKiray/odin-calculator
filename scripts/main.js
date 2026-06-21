@@ -43,6 +43,7 @@ document.getElementById("7").addEventListener("click", () => display.value += 7)
 document.getElementById("8").addEventListener("click", () => display.value += 8);
 document.getElementById("9").addEventListener("click", () => display.value += 9);
 document.getElementById("0").addEventListener("click", () => display.value += 0);
+document.getElementById(".").addEventListener("click", () => display.value += ".");
 document.getElementById("clear").addEventListener("click", () => {
     display.value = "";
     num1 = "";
