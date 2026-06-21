@@ -49,24 +49,29 @@ document.getElementById("clear").addEventListener("click", () => {
     oprt = "";
 });
 //step 6 - make the operate function work properly
+//step 7 - fixing bugs
 document.getElementById("add").addEventListener("click", () => {
+    if (oprt) return;
     num1 = display.value;
-    oprt = "add"
+    oprt = "add";
     display.value = "";
 });
 document.getElementById("subtract").addEventListener("click", () => {
+    if (oprt) return;
     num1 = display.value;
-    oprt = "subtract"
+    oprt = "subtract";
     display.value = "";
 });
 document.getElementById("multiply").addEventListener("click", () => {
+    if (oprt) return;
     num1 = display.value;
-    oprt = "multiply"
+    oprt = "multiply";
     display.value = "";
 });
 document.getElementById("divide").addEventListener("click", () => {
+    if (oprt) return;
     num1 = display.value;
-    oprt = "divide"
+    oprt = "divide";
     display.value = "";
 });
 document.getElementById("equal").addEventListener("click", () => {
