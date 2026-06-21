@@ -51,28 +51,32 @@ document.getElementById("clear").addEventListener("click", () => {
 //step 6 - make the operate function work properly
 //step 7 - fixing bugs
 document.getElementById("add").addEventListener("click", () => {
-    if (oprt) return;
-    num1 = display.value;
-    oprt = "add";
-    display.value = "";
+    if ((num1 === "") && (oprt === "")) {
+        num1 = display.value;
+        oprt = "add";
+        display.value = "";
+    } else {};
 });
 document.getElementById("subtract").addEventListener("click", () => {
-    if (oprt) return;
-    num1 = display.value;
-    oprt = "subtract";
-    display.value = "";
+    if ((num1 === "") && (oprt === "")) {
+        num1 = display.value;
+        oprt = "subtract";
+        display.value = "";
+    } else {};
 });
 document.getElementById("multiply").addEventListener("click", () => {
-    if (oprt) return;
-    num1 = display.value;
-    oprt = "multiply";
-    display.value = "";
+    if ((num1 === "") && (oprt === "")) {
+        num1 = display.value;
+        oprt = "multiply";
+        display.value = "";
+    } else {};
 });
 document.getElementById("divide").addEventListener("click", () => {
-    if (oprt) return;
-    num1 = display.value;
-    oprt = "divide";
-    display.value = "";
+    if ((num1 === "") && (oprt === "")) {
+        num1 = display.value;
+        oprt = "divide";
+        display.value = "";
+    } else {};
 });
 document.getElementById("equal").addEventListener("click", () => {
     num2 = display.value;
