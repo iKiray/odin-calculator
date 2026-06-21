@@ -33,16 +33,126 @@ function operate(op, n1, n2) {
 
 //step 5 - button functions
 const display = document.querySelector("input");
-document.getElementById("1").addEventListener("click", () => display.value += 1);
-document.getElementById("2").addEventListener("click", () => display.value += 2);
-document.getElementById("3").addEventListener("click", () => display.value += 3);
-document.getElementById("4").addEventListener("click", () => display.value += 4);
-document.getElementById("5").addEventListener("click", () => display.value += 5);
-document.getElementById("6").addEventListener("click", () => display.value += 6);
-document.getElementById("7").addEventListener("click", () => display.value += 7);
-document.getElementById("8").addEventListener("click", () => display.value += 8);
-document.getElementById("9").addEventListener("click", () => display.value += 9);
-document.getElementById("0").addEventListener("click", () => display.value += 0);
+document.getElementById("1").addEventListener("click", () => {
+    if((result !== "") && (display.value !== "") ) {
+        num1 = "";
+        num2 = "";
+        oprt = "";
+        result = "";
+        display.value = "";
+        display.value += 1;
+    } else {
+        display.value += 1;
+    }
+});
+document.getElementById("2").addEventListener("click", () => {
+    if ((result !== "") && (display.value !== "")) {
+        num1 = "";
+        num2 = "";
+        oprt = "";
+        result = "";
+        display.value = "";
+        display.value += 2;
+    } else {
+        display.value += 2;
+    }
+});
+document.getElementById("3").addEventListener("click", () => {
+    if ((result !== "") && (display.value !== "")) {
+        num1 = "";
+        num2 = "";
+        oprt = "";
+        result = "";
+        display.value = "";
+        display.value += 3;
+    } else {
+        display.value += 3;
+    }
+});
+document.getElementById("4").addEventListener("click", () => {
+    if ((result !== "") && (display.value !== "")) {
+        num1 = "";
+        num2 = "";
+        oprt = "";
+        result = "";
+        display.value = "";
+        display.value += 4;
+    } else {
+        display.value += 4;
+    }
+});
+document.getElementById("5").addEventListener("click", () => {
+    if ((result !== "") && (display.value !== "")) {
+        num1 = "";
+        num2 = "";
+        oprt = "";
+        result = "";
+        display.value = "";
+        display.value += 5;
+    } else {
+        display.value += 5;
+    }
+});
+document.getElementById("6").addEventListener("click", () => {
+    if ((result !== "") && (display.value !== "")) {
+        num1 = "";
+        num2 = "";
+        oprt = "";
+        result = "";
+        display.value = "";
+        display.value += 6;
+    } else {
+        display.value += 6;
+    }
+});
+document.getElementById("7").addEventListener("click", () => {
+    if ((result !== "") && (display.value !== "")) {
+        num1 = "";
+        num2 = "";
+        oprt = "";
+        result = "";
+        display.value = "";
+        display.value += 7;
+    } else {
+        display.value += 7;
+    }
+});
+document.getElementById("8").addEventListener("click", () => {
+    if ((result !== "") && (display.value !== "")) {
+        num1 = "";
+        num2 = "";
+        oprt = "";
+        result = "";
+        display.value = "";
+        display.value += 8;
+    } else {
+        display.value += 8;
+    }
+});
+document.getElementById("9").addEventListener("click", () => {
+    if ((result !== "") && (display.value !== "")) {
+        num1 = "";
+        num2 = "";
+        oprt = "";
+        result = "";
+        display.value = "";
+        display.value += 9;
+    } else {
+        display.value += 9;
+    }
+});
+document.getElementById("0").addEventListener("click", () => {
+    if ((result !== "") && (display.value !== "")) {
+        num1 = "";
+        num2 = "";
+        oprt = "";
+        result = "";
+        display.value = "";
+        display.value += 0;
+    } else {
+        display.value += 0;
+    }
+});
 document.getElementById(".").addEventListener("click", () => display.value += ".");
 document.getElementById("clear").addEventListener("click", () => {
     display.value = "";
