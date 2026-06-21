@@ -238,3 +238,28 @@ document.getElementById("equal").addEventListener("click", () => {
     num2 = "";
     oprt = "";
 });
+//Extra Credit
+document.addEventListener("keydown", (e) => {
+    if (e.key >= "0" && e.key <= "9") {
+        document.getElementById(e.key).click();
+    } else if (e.key === ".") {
+        document.getElementById(".").click();
+    } else if (e.key === "+") {
+        document.getElementById("add").click();
+    } else if (e.key === "-") {
+        document.getElementById("subtract").click();
+    } else if (e.key === "*") {
+        document.getElementById("multiply").click();
+    } else if (e.key === "/") {
+        e.preventDefault();
+        document.getElementById("divide").click();
+    } else if (e.key === "Enter" || e.key === "=") {
+        e.preventDefault();
+        document.getElementById("equal").click();
+    } else if (e.key === "Backspace") {
+        e.preventDefault();
+        document.getElementById("backspace").click();
+    } else if (e.key === "Escape") {
+        document.getElementById("clear").click();
+    }
+});
