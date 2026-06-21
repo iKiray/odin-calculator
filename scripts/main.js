@@ -153,7 +153,12 @@ document.getElementById("0").addEventListener("click", () => {
         display.value += 0;
     }
 });
-document.getElementById(".").addEventListener("click", () => display.value += ".");
+document.getElementById(".").addEventListener("click", () => {
+    if (display.value.indexOf(".") !== -1) {
+        return;
+    }
+    display.value += "."
+});
 document.getElementById("clear").addEventListener("click", () => {
     display.value = "";
     num1 = "";
